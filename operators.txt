@@ -1,0 +1,134 @@
+OPERATORLAR- - proq/dillerinde deyisenler uzerinde her hansi emeliyyatlari aparmaq ucundur.operatorlar 3 cur olur:riyazi operatorlar;muqayise operatorlari;mentiqi operatorlar
+
+RIYAZI OPERATORLAR-deyisenler uzerinde riyazi emeliyyatlari yerine yetirir.+;-;*;/
++   bu riyazi operator operandlar uzrinde  bildiymz toplama emeliyyatini y/y.yeni deyisenlerin qiymetini cemleyir;
+-   bu riyazi operator deyisenlerin ferqini hesablayir;
+*   desinlerin qiymetlerinin hasilini hesablayir;
+/   deyisenlerin nisbetini hesablayir (tam bolunme)
+%   bir oprandin digerine bolunmesinden alinan qaliqi hesbalayir (qaliqla bolme) MOD
+++  deyisenin qiymetini bir vahid artirir INKRIMENT
+--  deyisenin qiymeitni bir vahid azaldir DEKRIMENT
+
+  class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 2;
+            int b = 8;
+            int c = 7;
+            int d = b / a + (b % c);
+            int k = a++;
+            Console.WriteLine(d); // 5
+            Console.WriteLine(a);//  3
+        }
+    }
+
+
+MUQAYISE OPERATORLARI-deyisenlerin qiymetlerini muxtelif menalarda muqayise edir
+==  bu operator deyisenlerin qiymetinin beraberliyini yoxlayir, ____[eger =dirse TRUE,ferqlidirse FALSE ]
+!=  bu ise oz novbsinde == in eksini yerine/y._____[yeni qiymetlerin beraber olmadiqi halda TRUE,beaber olanda ise FALSE]
+>   I deyisnerin qiymetinin II den boyuk olmaqini yoxlayir
+>=  I deyisnerin qiymetinin II den boyuk beraber olmaqini yoxlayir
+<   I deyisnerin qiymetinin II den kicik olmaqini yoxlayir
+<=  I deyisnerin qiymetinin II den kicik beraber olmaqini yoxlayir
+
+/////
+===  bu deyisnlerin qiymeeti ile yanasi onlarin tipinin de bebarer olmaqini yolxlayir
+!==  bu da deyisenin hem qiymetinin hem de tioinin ferlqi olmasini yoxlayir
+  
+   class Program                                                                              
+    {
+        static void Main(string[] args)
+        {
+            int a = 6;
+            int b = 8;
+            int d = 2;
+            int c = a * b / 14;
+            if (c == d)
+                Console.WriteLine("beraberdir");
+            else
+                Console.WriteLine("beraber deyil");
+           
+        }
+    }
+	____beraber deyil
+	
+	
+	
+	class Program
+ 
+    {
+        static void Main(string[] args)
+        {
+            int a = 6;
+            int b = 8;
+            int d = 2;
+            int c = a * b / 24;
+            if(c==d)
+            Console.WriteLine("beraberdir");
+        }
+    }
+	
+	_____beraberdir
+	
+	
+	
+  
+ MENTIQI OPERATORLAR- TRUE ve FALSE qiymetini alir. ( bul tipli)
+&&  bu operator VE (AND)menasini verir ___ operandlarin yalniz her biri true olduqda  netice true olacaq
+||  bu ise VE YA  (OR) menasini ifade edir____operandlarin biri true olduqda  bele netice true olacaq
+!   inkar( NOT) yeni her hansi sertin eksini eks etdirir___true olsa false,ve eksine
+
+  class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 6;
+            int b = 8;
+            int d = 2;
+            int c = a * b / 24;
+            int k = a + b;
+            if (c == d &&  k==85 )
+                Console.WriteLine("true");
+            else
+                Console.WriteLine("false");
+           
+        }
+    }
+	
+	_____false
+	
+	class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 6;
+            int b = 8;
+            int d = 2;
+            int c = a * b / 24;
+            int k = a + b;
+            if (c == d || k == 85)
+                Console.WriteLine("true");
+            else
+                Console.WriteLine("false");
+
+        }
+    }
+	
+	____true
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
