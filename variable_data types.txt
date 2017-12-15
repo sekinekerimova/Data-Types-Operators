@@ -1,0 +1,56 @@
+   DEYISENLER_proqramlasma dilllerinde muhum anlayislardan biridir.
+   deyisen -bizim verdiyimiz ( eyni zamanda proqram isleyen zamanda alinan) deyerleri ozunde saxlayan verinlendir.
+   yeni deyisenler ozunde her hansi bir deyer  saxlayir( ve ya null) 
+   PROQRAMINN evvelinde deyisene verilen her hansi bir qiymeri proqramin novbeti hissesinde deyismek olar ,
+   bu zaman  ise deyisen uzerinde aparilan emelliyta zamani onun sonuncu qiymeti nezere alinir
+   yeni deyisen elan edilerken yaddasda onun ucun yer ayirilir.
+   deyisnlere verilen adlar _ ve ya IDENTIFIKATORLAR - yeni deyisene hansi adla muraciet edilecek yeni onu identifikasiya eden.  
+   idendifikatorlar  proqramistin isteyinden asilidir amma kodlar yazilarken ,identifikatorlar daha anlasiqli olmasi meslehete uygundur .
+   eyni zamanda mueeyenn qaydalari odemelidir ,beleki:
+   1. reqemle baslaya bilmez,ama adin ortasinda ve sonunda ola biler: 1a olmaz ,a1 olar
+   2. ayrici isarelerle( simvollarla) baslaya bilmez ; , ./ ? = + ! @ # 5 & ve s. yalniz "_ "  ile baslaya biler
+   3. adlarin boyuk ve kicik herfle baslamsinin onemi vardir(bir cox prq.dillerinde beledir)
+   4. bosluq ist oluna bilmez
+   5. latin herflernden ist olunmalidir
+   6. dilin isci sozlerinden ist oluna bilmez if, for ,while, else  ve s(reserverd words)
+   7. ve bir ad yalniz proqragm daxilinde yazlniz bir deyisenin identifikasiyasi ucun ist oluna biler
+   
+    ve birde en esas olan deyisnelere verilen TIPlerdir. cox prq dillerinde tip muhum anlayisdir .(javascript de mueyyen qeder yox)  
+	TIP ne ehemiyyet kesb edir: demeli deyisen mueyyen qiymet alir ve yaddasa mueyyen qeder yer ayrilir . ve bunlar tiplerle mueyyen olunur.
+	yeni deyisennin tippinden asili olaraq yer ayrilir.eyni zamanda deyisenler uzuerinde ne kimi emeliyatlarin aparila bileceyini mueeyen edir 
+	 meselen eger 
+	 a="code academy" ve b=4 dir.aydrdki a uzerine hec bir riyazi emeliyat aparrila bilmesz cunki o string tipine malikdir( char da hemcini )
+	 ama b uzerinde bu emeliytlari aparmaq mumkunudr tutaqki int  dir ve onu her hansi edede vurmaaq cemlemek olar
+	 eyni zamanda  a*b; a-b falan da yazmaq mumkun deil
+	 
+	 data types _ birr nov verilernlerin tipidir,yeni verielen haqqinda melumati ozunde saxlayir
+	  
+	  boolean _bool_ TRUE-FALSE;
+	  
+	  char- tek bir simvolu ozunde saxlayar(16 bit_2 bayt): char simvol1='a' ; char  simvol2='3' bu zaman ise '3' reqem kimi nezerde tutulmur
+	  
+	  string- her hansi setiri ve ya metni ozunde saxlayar (istenilen qeder): string setir="baki"
+	  
+	  byte	:8-bit:       unsigned integer :      0 to 255 
+	 
+	  sbyte :8-bit:       signed: integer type:	 -128 to 127
+	  
+	  int	:32-bit:      signed integer type :  -2,147,483,648 to 2,147,483,647
+	  
+	  uint	:32-bit:      unsigned integer type:  0 to 4,294,967,295
+	  
+	  long	:64-bit:      signed integer type: 	 -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+	  
+	  ulong	:64-bit:      unsigned integer type:  0 to 18,446,744,073,709,551,615
+	  
+	  short	:16-bit:      signed integer type:	 -32,768 to 32,767
+	  
+	  ushort:16-bit:      unsigned integer type:  0 to 65,535
+	  
+	  float:32-bit:       single-precision floating point type	-3.4 x 1038 to + 3.4 x 1038
+	  
+	  double:64-bit:      double-precision floating point type	(+/-)5.0 x 10-324 to (+/-)1.7 x 10308
+	  
+	  decimal:128-bit:    precise decimal values with 28-29 significant digits	(-7.9 x 1028 to 7.9 x 1028) / 100 to 28
+	  
+	
